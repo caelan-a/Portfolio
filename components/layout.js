@@ -5,7 +5,7 @@ export default function Layout({ preview, children }) {
   return (
     <>
       <Meta />
-      {/* <NavBar /> */}
+      <NavBar />
       <div className="min-h-screen font-sans  text-primary" >
         <main>{children}</main>
       </div>

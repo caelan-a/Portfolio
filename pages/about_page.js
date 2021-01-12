@@ -3,9 +3,16 @@ import Image from 'next/image'
 import Head from 'next/head'
 import Layout from '../components/layout'
 
-import ExperienceTimeline from '../components/experience_timeline'
+import ExperienceList from '../components/experience_list'
+import matter from "gray-matter";
+import ReactMarkdown from "react-markdown";
 
-export default function WelcomePage({ }) {
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+
+export default function WelcomePage({ experience_data, education_data }) {
+    const educationList = education_data.map((data_element) => matter(data_element));
+
     return (
         <>
             <Layout>
@@ -52,21 +59,86 @@ export default function WelcomePage({ }) {
 
 
 
-                        <br/>
-                        <br/>
+                        <br />
+                        <br />
                         <p class="font-sans text-primary text-6xl items-center justify-center text-center">
                             Experience</p>
-                        <br/>
-                        <br/>
+                        <br />
+                        <br />
 
                     </div>
 
                 </div>
 
-                <ExperienceTimeline />
+                <ExperienceList data={experience_data}></ExperienceList>
 
+
+                <br />
+                <br />
+                <p class="font-sans text-primary text-6xl items-center justify-center text-center">
+                    Education</p>
+                <br />
+                <br />
+                <div class="markdown">
+                    <VerticalTimeline>
+                        {educationList.map((blog, i) => (
+                            <VerticalTimelineElement
+                                key={i}
+                                date={blog.data.date}
+                                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                                icon={<img class=" w-16  " src={blog.data.iconPath} />}
+                            >
+                                <h1 >{blog.data.title}</h1>
+                                <h2 >{blog.data.subtitle}</h2>
+
+                                <ReactMarkdown
+                                    escapeHtml={false}
+                                    source={blog.content}
+                                />
+                            </VerticalTimelineElement>
+                        ))}
+
+                    </VerticalTimeline>
+                </div>
             </Layout>
         </>
     );
 
+}
+
+
+export async function getStaticProps() {
+    const siteData = await import(`../config.json`);
+    const fs = require("fs");
+
+    const files = fs.readdirSync(`${process.cwd()}/content/experience`, "utf-8");
+    const list_experience = files.filter((fn) => fn.endsWith(".md"));
+    const experience_data = list_experience.map((experience) => {
+        const path = `${process.cwd()}/content/experience/${experience}`;
+        const rawContent = fs.readFileSync(path, {
+            encoding: "utf-8",
+        });
+
+        return rawContent;
+    });
+
+    const education_files = fs.readdirSync(`${process.cwd()}/content/education`, "utf-8");
+    const list_education = education_files.filter((fn) => fn.endsWith(".md"));
+    const education_data = list_education.map((education) => {
+        const path = `${process.cwd()}/content/education/${education}`;
+        const rawContent = fs.readFileSync(path, {
+            encoding: "utf-8",
+        });
+
+        return rawContent;
+    });
+
+    return {
+        props: {
+            experience_data: experience_data,
+            education_data: education_data,
+            title: siteData.default.title,
+            description: siteData.default.description,
+        },
+    };
 }

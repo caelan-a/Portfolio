@@ -13,3 +13,12 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+
+/* Markdown */
+.markdown h1 {
+    @apply text-2xl font-bold ;
+}
+
+.markdown h2 {
+    @apply text-base;
+}
