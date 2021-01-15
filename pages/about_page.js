@@ -3,15 +3,20 @@ import Image from 'next/image'
 import Head from 'next/head'
 import Layout from '../components/layout'
 
-import ExperienceList from '../components/experience_list'
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import MarkdownTimline from '../components/markdown_timeline'
 
 export default function WelcomePage({ experience_data, education_data }) {
     const educationList = education_data.map((data_element) => matter(data_element));
+
+    const renderers = {
+        paragraph: 'h3',
+    };
+
 
     return (
         <>
@@ -56,50 +61,15 @@ export default function WelcomePage({ experience_data, education_data }) {
                             <img class=" w-1/5 transform rotate-11 animate-wiggle float-right " src={require('../public/assets/images/saxophone.svg')} />
 
                         </div>
-
-
-
-                        <br />
-                        <br />
-                        <p class="font-sans text-primary text-6xl items-center justify-center text-center">
-                            Experience</p>
-                        <br />
-                        <br />
-
                     </div>
-
                 </div>
+                <MarkdownTimline data={experience_data} highlightFirst={false}  title="Experience" ></MarkdownTimline>
+                <br/>
+                <br/>
+                <MarkdownTimline data={education_data} highlightFirst={false}  title="Education" ></MarkdownTimline>
 
-                <ExperienceList data={experience_data}></ExperienceList>
 
-
-                <br />
-                <br />
-                <p class="font-sans text-primary text-6xl items-center justify-center text-center">
-                    Education</p>
-                <br />
-                <br />
-                <div class="markdown">
-                    <VerticalTimeline>
-                        {educationList.map((blog, i) => (
-                            <VerticalTimelineElement
-                                key={i}
-                                date={blog.data.date}
-                                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                                icon={<img class=" w-16  " src={blog.data.iconPath} />}
-                            >
-                                <h1 >{blog.data.title}</h1>
-                                <h2 >{blog.data.subtitle}</h2>
-
-                                <ReactMarkdown
-                                    escapeHtml={false}
-                                    source={blog.content}
-                                />
-                            </VerticalTimelineElement>
-                        ))}
-
-                    </VerticalTimeline>
-                </div>
+            
             </Layout>
         </>
     );

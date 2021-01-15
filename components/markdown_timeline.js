@@ -7,16 +7,41 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 
 
-function ExperienceList({ content, data }) {
+function MarkdownTimline({ data, highlightFirst, title }) {
     const RealData = data.map((data_element) => matter(data_element));
+
+    const renderers = {
+        paragraph: 'h3',
+    };
 
     return (
         <>
+            <p class="font-sans text-primary text-6xl items-center justify-center text-center">
+                {title}</p>
+            <br />
+            <br />
             <div class="markdown">
-                <VerticalTimeline>
+                <style jsx>{`
+                /* CUSTOM LINE COLOR */
+                    /* The line */
+                    .vertical-timeline.vertical-timeline-custom-line::before {
+                        background: #424242;
+                    }
+
+                    /* Icon container's border */
+                    .vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--work .vertical-timeline-element-icon {
+                        box-shadow: 0 0 0 4px #1976d2, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+                    }
+
+                    .vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--education .vertical-timeline-element-icon {
+                        box-shadow: 0 0 0 4px #c2185b, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+                    }
+                `}</style>
+                <VerticalTimeline class="vertical-timeline-custom-line">
                     {RealData.map((blog, i) => (
-                        i == 0 ?
+                        i == 0 && highlightFirst == true ?
                             <VerticalTimelineElement
+                            className="vertical-timeline-element--education vertical-timeline-element--work"
 
                                 contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
@@ -26,7 +51,7 @@ function ExperienceList({ content, data }) {
                             >
                                 <h1 style={{ color: "white" }}>{blog.data.title}</h1>
                                 <h2 style={{ color: "white" }}>{blog.data.subtitle}</h2>
-
+                                <br />
                                 <ReactMarkdown
                                     escapeHtml={false}
                                     source={blog.content}
@@ -40,55 +65,20 @@ function ExperienceList({ content, data }) {
                             >
                                 <h1 >{blog.data.title}</h1>
                                 <h2 >{blog.data.subtitle}</h2>
+                                <br />
 
                                 <ReactMarkdown
                                     escapeHtml={false}
                                     source={blog.content}
+                                    renderers={renderers}
                                 />
                             </VerticalTimelineElement>
                     ))}
 
                 </VerticalTimeline>
             </div>
-
-            {/* <div className="markdown">
-                <ul>
-
-                    <div>
-
-                        {RealData.map((blog, i) => (
-                            <li key={i}>
-                                <div class="justify-center">
-                                    <div class="flex flex-row items-center space-x-4 w-1/2 self-center">
-                                        <div>
-                                            <img class=" w-16  " src={blog.data.iconPath} />
-                                        </div>
-
-                                        <div>
-                                            <h1>{blog.data.title}</h1>
-                                            <h2>{blog.data.subtitle}</h2>
-
-                                            <ReactMarkdown
-                                                escapeHtml={false}
-                                                source={blog.content}
-                                            />
-                                            <p>{blog.data.date}</p>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
-
-
-
-                            </li>
-                        ))}
-                    </div>
-                </ul>
-            </div> */}
         </>
     );
 };
 
-export default ExperienceList;
+export default MarkdownTimline;

@@ -5,8 +5,7 @@ import WelcomePage from './welcome_page'
 import React from "react";
 import matter from "gray-matter";
 import Link from "next/link";
-import ExperienceList from "../components/experience_list"
-
+  
 export default function Index({ experience_data, title, description }) {
 
   return (

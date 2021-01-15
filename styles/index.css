@@ -19,6 +19,12 @@
     @apply text-2xl font-bold ;
 }
 
+
+.markdown h3 {
+    @apply text-base font-normal ;
+}
+
+
 .markdown h2 {
     @apply text-base;
 }
