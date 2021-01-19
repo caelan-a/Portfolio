@@ -85,10 +85,17 @@ Development continues to this day in both maintenance and feature addition.
 </div>
 </section>
 
-<div class="flex pb-10 pt-10 pb-10">
+<div class="flex flex-row pb-16 pt-10 pb-10 justify-center space-x-24"
 
+>
+
+<a href="https://apps.apple.com/us/app/wappy/id1473602977?l=nl&ls=1">
 <img src="/assets/images/apple.svg" >
+</a>
+
+<a href="https://play.google.com/store/apps/details?id=be.eforge.wappy">
 <img src="/assets/images/google.svg" >
+</a>
 
 </div>
 <div class="pb-24">
