@@ -1,5 +1,8 @@
 module.exports = {
   purge: ['./components/**/*.js', './pages/**/*.js'],
+  variants: {
+    animation: ["motion-safe"]
+  },
   theme: {
     textColor: {
       'primary': '#292929',
@@ -20,10 +23,15 @@ module.exports = {
         wiggle: {
           '0%, 100%': { transform: 'rotate(-1deg)' },
           '50%': { transform: 'rotate(1deg)' },
+        },
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 }
         }
       },
       animation: {
         wiggle: 'wiggle 3s ease-in-out infinite',
+        fadeIn: "fadeIn 250ms ease-in forwards"
       },
       rotate: {
         '-180': '-180deg',

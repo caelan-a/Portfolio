@@ -13,12 +13,12 @@ export default function NavBar({ }) {
                 </Link>
                 <div className='hidden w-full lg:inline-flex lg:flex-grow lg:w-auto '>
                     <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto space-x-8 text-lg pr-4'>
-                        <Link href='/about_page'>
+                        <Link href='/about'>
                             <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-100 hover:text-white'>
                                 About
               </a>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/project_list'>
                             <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-100 hover:text-white'>
                                 Work
               </a>

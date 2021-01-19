@@ -6,7 +6,7 @@ import React from "react";
 import matter from "gray-matter";
 import Link from "next/link";
   
-export default function Index({ experience_data, title, description }) {
+export default function Index({ }) {
 
   return (
     <>
@@ -14,8 +14,8 @@ export default function Index({ experience_data, title, description }) {
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta charSet="utf-8" />
-          <meta name="Description" content={description}></meta>
-          <title>{title}</title>
+          <meta name="Description" content="Caelan Anderson is a software developer and designer with a background in Physics from the University of Melbourne"></meta>
+          <title>Caelan Anderson - Software Developer</title>
         </Head>
         <WelcomePage/>
       </Layout>

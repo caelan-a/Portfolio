@@ -10,7 +10,7 @@ import Link from 'react';
 
 import MarkdownTimline from '../components/markdown_timeline'
 
-export default function WelcomePage({ experience_data, education_data }) {
+export default function AboutPage({ experience_data, education_data }) {
     const educationList = education_data.map((data_element) => matter(data_element));
 
     const renderers = {
@@ -24,7 +24,7 @@ export default function WelcomePage({ experience_data, education_data }) {
                 <Head>
                     <title>Caelan.</title>
                 </Head>
-                <div class="w-full flex h-full items-center justify-center">
+                <div class="w-full flex h-full items-center justify-center motion-safe:animate-fadeIn">
 
                     <div class="pt-32 flex-wrap h-full items-center justify-center text-lg" style={{width: '75%'}}>
                         <div class="  flex flex-row items-center justify-center">

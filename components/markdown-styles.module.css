@@ -1,0 +1,47 @@
+.markdown {
+  @apply text-lg leading-relaxed;
+}
+
+.markdown section{
+  @apply p-4 lg:flex lg:items-center
+}
+
+.markdown button {
+  @apply border rounded-md focus:outline-none;
+  color: #29D368;
+  border-color: #29D368;
+  padding: 1em; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.markdown button::hover {
+  background-color:#29D368; 
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply my-6 text-lg text-primary;
+}
+
+.markdown img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.markdown h1 {
+  @apply text-3xl mt-12 mb-4 leading-snug font-bold text-primary;
+}
+
+
+.markdown h2 {
+  @apply text-3xl mt-12 mb-4 leading-snug;
+}
+
+.markdown h3 {
+  @apply text-2xl mt-8 mb-4 leading-snug;
+}
