@@ -41,6 +41,7 @@ export default Project;
 export async function getStaticProps({ params }) {
   const post_api = require("../../pages/api");
   // 
+  
   const post = post_api.getPostBySlug('projects', params.pid, [
     'title',
     'content'
