@@ -26,7 +26,7 @@ export default function AboutPage({ experience_data, education_data }) {
                 </Head>
                 <div class="w-full flex h-full justify-center motion-safe:animate-fadeIn">
 
-                    <div class="pt-10 flex-wrap h-full items-center text-lg text-center md:text-left w-3/5 space-y-20">
+                    <div class="pt-20 flex-wrap h-full items-center text-lg text-center md:text-left w-3/5 space-y-20">
 
                         <div class=" flex flex-col md:flex-row items-center justify-between md:space-x-20 space-x-0">
                             <img class="inline-block w-48 rounded-full ring-2 ring-white " src="/assets/images/profile.jpg" alt="" />
