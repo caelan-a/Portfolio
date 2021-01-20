@@ -22,7 +22,7 @@ export default function WelcomePage({ }) {
                     </div>
 
 
-                    <div class="h-96 flex flex-wrap items-center justify-center pt-24">
+                    <div class="h-96 flex flex-wrap items-center justify-center pt-5">
 
                         <div class="flex flex-wrap items-center justify-center">
                             <img class=" w-96 h-96 transform rotate-20" src={require('../public/assets/images/cloud.svg')} />

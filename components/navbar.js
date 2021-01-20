@@ -1,33 +1,83 @@
 import Link from 'next/link';
-
-function navToggle() {
-    var btn = document.getElementById('menuBtn');
-    var nav = document.getElementById('menu');
-
-    btn.classList.toggle('open');
-    nav.classList.toggle('flex');
-    nav.classList.toggle('hidden');
-}
+import styles from '../components/navbar.module.css'
+import { useRouter } from 'next/router'
 
 export default function NavBar({ }) {
+
+    if (process.browser) {
+        var nav = document.getElementById('site-menu');
+        var header = document.getElementById('top');
+
+        window.addEventListener('scroll', function () {
+            if (window.scrollY >= 200) { // adjust this value based on site structure and header image height
+
+                nav.classList.add(styles.nav_sticky);
+                header.classList.add(styles.pt_scroll);
+
+            } else {
+                nav.classList.remove(styles.nav_sticky);
+                header.classList.remove(styles.pt_scroll);
+            }
+        });
+    }
+
+    function navToggle() {
+        console.log("Toggle")
+
+        var btn = document.getElementById('menuBtn');
+        var nav = document.getElementById('menu');
+
+        btn.classList.toggle('open');
+        nav.classList.toggle('flex');
+        nav.classList.toggle('hidden');
+    }
+
+    const router = useRouter()
+    var currentRoute = router.route;
+
+    function isNavLinkBold(route) {
+        return route == currentRoute
+    }
+
     return (
         <>
-            <header id="top" class="w-full flex flex-col fixed sm:relative bg-white pin-t pin-r pin-l">
-                <nav id="site-menu" class="flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-white shadow sm:shadow-none border-t-4 border-red-900">
-                    <div class="w-full sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center">
-                        <a href="#" class="no-underline py-1">
-                            <h1 class="font-bold text-lg tracking-widest">LOGO</h1>
-                        </a>
-                        <button id="menuBtn" class="hamburger block sm:hidden focus:outline-none" type="button" onclick="navToggle();">
-                            <span class="hamburger__top-bun"></span>
-                            <span class="hamburger__bottom-bun"></span>
+            <header id="top" class="pb-10 ">
+                <nav id="site-menu" class="flex sm:flex-row flex-col w-full bg-white shadow-sm text-primary z-10 fixed p-2 ">
+                    <div class="flex flex-row w-full " style={{ justifyContent: 'space-between' }}>
+                        <Link href='/'>
+
+                            <a className='inline-flex p-2 '>
+                                <img class="w-32" src={require('../public/assets/images/logo.svg')} />
+                            </a>
+
+                        </Link>
+
+                        <button id="menuBtn" class={styles.hamburger + "  sm:hidden focus:outline-none pr-5"} type="button" onClick={navToggle}>
+                            <span class={styles.hamburger__top_bun}></span>
+                            <span class={styles.hamburger__bottom_bun}></span>
                         </button>
+
                     </div>
-                    <div id="menu" class="w-full sm:w-auto self-end sm:self-center sm:flex flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0 hidden">
-                        <a class="text-dark font-bold hover:text-red text-lg w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2" href="https://ttntm.me/blog/tailwind-responsive-menu/" target="_blank">About</a>
-                        <a class="text-dark font-bold hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2" href="#bottom">Features</a>
+
+                    <div id="menu" className='sm:flex sm:flex-row flex-col text-lg sm:space-x-4 hidden w-full sm:w-auto items-center self-end  h-full '>
+    
+                        <Link href='/about'>
+                            <a className={'inline-flex w-auto  px-3 py-2 rounded text-white  items-center  hover:bg-gray-100 hover:text-white ' + (isNavLinkBold('/about') ? 'font-bold' : '')} >About</a>
+                        </Link>
+                        <Link href='/project_list'>
+                            <a className={'inline-flex w-auto  px-3 py-2 rounded text-white  items-center hover:bg-gray-100 hover:text-white ' + (isNavLinkBold('/project_list') ? 'font-bold' : '')}>
+                                Work</a>
+
+                        </Link>
+                        <Link href='/'>
+                            <a className={'inline-flex w-auto  px-3 py-2 rounded text-white items-center  hover:bg-gray-100 hover:text-white ' + (isNavLinkBold('/contact') ? 'font-bold' : '')}>
+                                Contact
+</a>
+
+                        </Link>
                     </div>
                 </nav>
+
             </header>
             {/* <nav className='absolute w-full z-10 flex items-center flex-wrap p-3 shadow-sm text-primary bg-white'>
                 <Link href='/'>

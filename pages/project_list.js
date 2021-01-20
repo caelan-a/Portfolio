@@ -19,7 +19,7 @@ export default function ProjectListPage({ project_list_data }) {
                 <Head>
                     <title>Caelan Anderson - Projects</title>
                 </Head>
-                <div class="flex flex-wrap items-center justify-center pt-32 motion-safe:animate-fadeIn">
+                <div class="flex flex-wrap items-center justify-center pt-16 motion-safe:animate-fadeIn">
                     <div class="w-3/4">
                         <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:lg:grid-cols-1 gap-5">
                             {projectList.map((p, i) => (
