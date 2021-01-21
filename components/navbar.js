@@ -60,17 +60,31 @@ export default function NavBar({ }) {
                     </div>
 
                     <div id="menu" className='sm:flex sm:flex-row flex-col text-lg sm:space-x-4 hidden w-full sm:w-auto items-center self-end  h-full '>
-    
+
                         <Link href='/about'>
-                            <a className={'inline-flex w-auto  px-3 py-2 rounded text-white  items-center  hover:bg-gray-100 hover:text-white ' + (isNavLinkBold('/about') ? 'font-bold' : '')} >About</a>
+                            <a
+
+                                style={{
+                                    fontWeight: isNavLinkBold('/about') ? 'bold' : 'normal'
+                                }}
+                                className='inline-flex w-auto  px-3 py-2 rounded text-white  items-center  hover:bg-gray-100 hover:text-white' > About</a>
                         </Link>
                         <Link href='/project_list'>
-                            <a className={'inline-flex w-auto  px-3 py-2 rounded text-white  items-center hover:bg-gray-100 hover:text-white ' + (isNavLinkBold('/project_list') ? 'font-bold' : '')}>
+                            <a
+
+                                style={{
+                                    fontWeight: isNavLinkBold('/project_list') ? 'bold' : 'normal'
+                                }}
+                                className='inline-flex w-auto  px-3 py-2 rounded text-white  items-center hover:bg-gray-100 hover:text-white ' >
                                 Work</a>
 
                         </Link>
                         <Link href='/contact'>
-                            <a className={'inline-flex w-auto  px-3 py-2 rounded text-white items-center  hover:bg-gray-100 hover:text-white ' + (isNavLinkBold('/contact') ? 'font-bold' : '')}>
+                            <a
+                                style={{
+                                    fontWeight: isNavLinkBold('/contact') ? 'bold' : 'normal'
+                                }}
+                                className='inline-flex w-auto  px-3 py-2 rounded text-white items-center  hover:bg-gray-100 hover:text-white ' >
                                 Contact
 </a>
 

@@ -38,7 +38,7 @@ export default function WelcomePage({ }) {
                             Hi there, I’m <b>Caelan!</b>
                         </p>
                         <br></br>
-                        <p class="text-lg md:text-2xl">
+                        <p class="text-lg md:text-xl lg:text-2xl  ">
                             I’m a creator who uses technology and design to make things.
                 <br></br><br></br>
                 I studied physics at university and have been programming for most of my life.

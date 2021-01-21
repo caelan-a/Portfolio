@@ -15,6 +15,7 @@ export default function Index({ }) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta charSet="utf-8" />
           <meta name="Description" content="Caelan Anderson is a software developer and designer with a background in Physics from the University of Melbourne"></meta>
+          <link rel="shortcut icon" href="/favicon.ico" />
           <title>Caelan Anderson - Software Developer</title>
         </Head>
         <WelcomePage/>
