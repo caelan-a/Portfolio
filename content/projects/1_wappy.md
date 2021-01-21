@@ -85,9 +85,7 @@ Development continues to this day in both maintenance and feature addition.
 </div>
 </section>
 
-<div class="flex flex-row pb-16 pt-10 pb-10 justify-center space-x-24"
-
->
+<div class="flex flex-col md:flex-row pb-16 pt-10  justify-center lg:space-x-32 md:space-x-10 space-x-0 space-y-10 md:space-y-0">
 
 <a href="https://apps.apple.com/us/app/wappy/id1473602977?l=nl&ls=1">
 <img src="/assets/images/apple.svg" >
