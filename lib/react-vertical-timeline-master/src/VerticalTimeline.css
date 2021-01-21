@@ -28,6 +28,8 @@
 }
 
 .vertical-timeline.vertical-timeline--one-column-right::before {
+  left: 50%;
+
   right: 18px;
   left: unset;
 }

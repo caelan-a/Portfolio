@@ -27,8 +27,8 @@ export default function ProjectListPage({ project_list_data }) {
                                 <Link key={i} href={p.data.redirect_url}> 
                                     <div class="group relative" style={{ cursor: 'pointer' }}>
                                         <img src={p.data.tile_cover_uri} class="transition duration-500 ease-in-out hover:opacity-80 opacity-100" />
-                                        <div class="absolute left-5 top-3 font-bold text-4xl transition duration-500 ease-in-out group-hover:opacity-100 opacity-0" style={{ color: p.data.text_color }}>{p.data.title}</div>
-                                        <div class="absolute bottom-5 left-5 text-2xl group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out" style={{ color: p.data.text_color }}> {p.data.professional ? 'Professional' : 'Personal'}</div>
+                                        <div class="absolute left-5 top-3 font-bold text-4xl transition duration-500 ease-in-out group-hover:opacity-100 opacity-100 md:opacity-0" style={{ color: p.data.text_color }}>{p.data.title}</div>
+                                        <div class="absolute bottom-5 left-5 text-2xl group-hover:opacity-100 opacity-100 md:opacity-0 transition duration-500 ease-in-out" style={{ color: p.data.text_color }}> {p.data.professional ? 'Professional' : 'Personal'}</div>
                                     </div>
                                 </Link>
                             ))}

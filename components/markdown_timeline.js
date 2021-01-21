@@ -13,13 +13,15 @@ function MarkdownTimline({ data, highlightFirst, title }) {
         paragraph: 'h3',
     };
 
+
+
     return (
         <>
             <p class="font-sans text-primary text-6xl items-center justify-center text-center">
                 {title}</p>
             <br />
             <br />
-            <div class="markdown">
+            <div class="markdown w-full">
                 <style jsx>{`
                     h1 {
                         font-size: 1.5em;
@@ -38,7 +40,7 @@ function MarkdownTimline({ data, highlightFirst, title }) {
                     }
                 
                 `}</style>
-                <VerticalTimeline class="vertical-timeline-custom-line">
+                <VerticalTimeline class="vertical-timeline-custom-line"  animate={true} >
                     {RealData.map((blog, i) => (
                         i == 0 && highlightFirst == true ?
                             <VerticalTimelineElement
@@ -47,6 +49,7 @@ function MarkdownTimline({ data, highlightFirst, title }) {
                                 contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                                 date={blog.data.date}
+                                
                                 icon={<img src={blog.data.iconPath} />}
                             >
                                 <h1 style={{ color: "white" }}>{blog.data.title}</h1>

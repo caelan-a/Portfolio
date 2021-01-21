@@ -64,11 +64,13 @@ export default function AboutPage({ experience_data, education_data }) {
                         </div>
                     </div>
                 </div>
-                <MarkdownTimline data={experience_data} highlightFirst={false} title="Experience" ></MarkdownTimline>
-                <br />
-                <br />
-                <MarkdownTimline data={education_data} highlightFirst={false} title="Education" ></MarkdownTimline>
 
+                <div className="w-full">
+                    <MarkdownTimline data={experience_data} highlightFirst={false} title="Experience" ></MarkdownTimline>
+                    <br />
+                    <br />
+                    <MarkdownTimline data={education_data} highlightFirst={false} title="Education" ></MarkdownTimline>
+                </div>
 
 
             </Layout>
