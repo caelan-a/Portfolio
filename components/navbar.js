@@ -69,7 +69,7 @@ export default function NavBar({ }) {
                                 Work</a>
 
                         </Link>
-                        <Link href='/'>
+                        <Link href='/contact'>
                             <a className={'inline-flex w-auto  px-3 py-2 rounded text-white items-center  hover:bg-gray-100 hover:text-white ' + (isNavLinkBold('/contact') ? 'font-bold' : '')}>
                                 Contact
 </a>

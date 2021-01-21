@@ -22,7 +22,7 @@ export default function AboutPage({ experience_data, education_data }) {
         <>
             <Layout>
                 <Head>
-                    <title>Caelan.</title>
+                    <title>Caelan Anderson - About</title>
                 </Head>
                 <div class="w-full flex h-full justify-center motion-safe:animate-fadeIn">
 

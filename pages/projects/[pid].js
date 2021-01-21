@@ -4,7 +4,7 @@ import markdownStyles from '../../components/markdown_styles.module.css'
 import ReactMarkdown from "react-markdown"
 import Image from "next/image"
 import NavBar from '../../components/navbar'
-
+import Head from 'next/head'
 const Project = ({ post }) => {
   const router = useRouter()
   const { pid } = router.query
@@ -26,6 +26,12 @@ const Project = ({ post }) => {
 
   return (
     <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+        <meta name="Description" content="Caelan Anderson is a software developer and designer with a background in Physics from the University of Melbourne"></meta>
+        <title>Caelan's Projects - {post.title}</title>
+      </Head>
       <NavBar />
       <div className="max-w-screen-lg mx-auto pt-5 motion-safe:animate-fadeIn markdown">
         <div
