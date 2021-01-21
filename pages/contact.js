@@ -69,15 +69,11 @@ export default function ContactPage({ }) {
             <Head>
                 <title>Caelan Anderson - Contact</title>
             </Head>
-            <div class="flex flex-col items-center">
-                <br />
-                <br />
-                <br />
-                <br />
-                <div class="flex flex-row  shadow-lg w-1/2">
-                    <div class="flex flex-col w-1/4 space-y-10 items-center justify-center" style={{ backgroundColor: "#C2D6DB" }}>
-                        <img class="inline-block w-3/5 rounded-full ring-8 ring-white " src="/assets/images/profile.jpg" alt="" />
-                        <div class="flex flex-row items-center justify-center space-x-10 pt-5 pb-10" style={{ color: "#555555" }}>
+            <div class="flex flex-col lg:flex-row items-center justify-center h-full lg:pt-20">
+                <div class="lg:flex flex-col lg:flex-row shadow-lg  items-center justify-center h-full "style={{ backgroundColor: "#C2D6DB" }}>
+                    <div class="flex flex-col lg:w-1/4 space-y-10 items-center justify-center pt-20 h-full" >
+                        <img class="inline-block w-2/5 lg:w-3/5 rounded-full ring-8 ring-white " src="/assets/images/profile.jpg" alt="" />
+                        <div class="flex flex-row items-center justify-center space-x-10 space-y-0 lg:pt-5 pb-10" >
                             <a href='https://www.linkedin.com/in/caelan-anderson-539547154'>
                                 <AiFillLinkedin style={{ width: '25px', height: '25px', color: "white" }} />
 
@@ -98,7 +94,7 @@ export default function ContactPage({ }) {
                         </div>
 
                     </div>
-                    <div class="flex flex-col w-3/4 space-y-10 shadow-sm p-20">
+                    <div class="flex flex-col lg:w-3/4 space-y-10 shadow-sm p-20" style={{ backgroundColor: "white" }}>
                         <div className="">
                             <div className=" space-y-4">
                                 <h1 class="text-4xl ">Contact Me</h1>
@@ -106,7 +102,7 @@ export default function ContactPage({ }) {
                             </div>
                         </div>
                         <div className="class">
-                            <form onSubmit={handleOnSubmit} class="flex flex-col w-1/2 space-y-5">
+                            <form onSubmit={handleOnSubmit} class="flex flex-col lg:w-1/2 space-y-5">
 
 
 
@@ -117,6 +113,18 @@ export default function ContactPage({ }) {
                                         placeholder="Name"
                                         value={inputs.name}
                                         name="fname"
+                                        style={{
+                                            height: '48px',
+                                            width: '100%',
+                                            border: 'none',
+                                            borderRadius: '0px',
+                                            borderColor: 'grey',
+                                            borderBottom: '1px solid #121212',
+                                            margin: '8px 0px',
+                                            boxShadow: 'none',
+                                            padding: '0px',
+                                            outline: 'none',
+                                        }}
                                         onChange={handleOnChange} />
                                 </div>
 
@@ -130,6 +138,18 @@ export default function ContactPage({ }) {
                                         onChange={handleOnChange}
                                         required
                                         value={inputs.email}
+                                        style={{
+                                            height: '48px',
+                                            width: '100%',
+                                            border: 'none',
+                                            borderColor: 'grey',
+                                            borderRadius: '0px',
+                                            borderBottom: '1px solid #121212',
+                                            margin: '8px 0px',
+                                            boxShadow: 'none',
+                                            padding: '0px',
+                                            outline: 'none',
+                                        }}
                                     />
                                 </div>
                                 <div className="">
@@ -144,10 +164,9 @@ export default function ContactPage({ }) {
                                             style={{
                                                 minHeight: "100px",
                                                 maxHeight: "100px",
-
                                                 width: "100%",
                                                 border: "none",
-                                                outline: "none",
+                                                outline: 'none',
                                                 borderRadius: "5px",
                                                 borderWidth: "1px",
                                                 borderColor: "grey",
@@ -161,7 +180,19 @@ export default function ContactPage({ }) {
 
                                     </div>
                                     <div className="">
-                                        <button type="submit" disabled={status.submitting}>
+                                        <button 
+                                        style={{
+                                            padding: '0px 24px',
+                                            height: '48px',
+                                            backgroundColor: '#F83850',
+                                            margin: '16px 0px',
+                                            border: 'none',
+                                            borderRadius: '0px',
+                                            cursor: 'pointer',
+                                            color: '#fff',
+                                            borderRadius: '6px'
+                                        }}
+                                        type="submit" disabled={status.submitting}>
                                             {!status.submitting
                                                 ? !status.submitted
                                                     ? 'Submit'
@@ -180,83 +211,6 @@ export default function ContactPage({ }) {
                         </div>
                     </div>
 
-                    <style jsx>{`
-
-                    .grid {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        max-width: 1280px;
-                        margin-right: auto;
-                        margin-left: auto;
-                        padding-right: 12px;
-                    }
-
-                    .col-4,
-                    .col-8 {
-                        padding: 8px 12px;
-                        box-sizing: border-box;
-                    }
-                    .col-4 {
-                        flex-basis: 50%;
-                        max-width: 100%;
-                    }
-                    .col-8 {
-                        flex-basis: 100%;
-                        max-width: 100%;
-                    }
-                    @media only screen and (max-width: 768px) {
-                        .grid {
-                            flex-direction: column;
-                            padding-left: 0px;
-                            padding-right: 0px;
-                        }
-                        .col-4,
-                        .col-8 {
-                            flex-basis: 100%;
-                            max-width: 100%;
-                        }
-                    }
-                    input[type=text], input[type=email] {
-                        height: 48px;
-                        width: 100%;
-                        border: none;
-                        border-radius: 0px;
-                        border-bottom: 1px solid #121212;
-                        margin: 8px 0px;
-                        box-shadow: none;
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        padding: 0px;
-                        outline: none;
-                    }
-
-                    ::placeholder {
-                        color: #C8CBCE;
-                    }
-
-                    ::-ms-input-placeholder {
-                        color: #C8CBCE;
-                    }
-
-                    button {
-                        padding: 0px 24px;
-                        height: 48px;
-                        background-color: #F83850;
-                        margin: 16px 0px;
-                        border: none;
-                        border-radius: 0px;
-                        cursor: pointer;
-                        color: #fff;
-                    }
-
-                    .disabled {
-                        background-color: #fff;
-                        color: #121212;
-                        cursor: auto;
-                        padding-left: 0px;
-                    }
-                `}</style>
                 </div>
             </div>
 
