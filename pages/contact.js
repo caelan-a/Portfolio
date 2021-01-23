@@ -94,7 +94,7 @@ export default function ContactPage({ }) {
                         </div>
 
                     </div>
-                    <div class="flex flex-col lg:w-3/4 space-y-10 shadow-sm p-20  h-full" style={{ backgroundColor: "white" }}>
+                    <div class="flex flex-col lg:w-3/4 space-y-10 shadow-sm p-20 " style={{ backgroundColor: "white" }}>
                         <div className="">
                             <div className=" space-y-4">
                                 <h1 class="text-4xl ">Contact Me</h1>

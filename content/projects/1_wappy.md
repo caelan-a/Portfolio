@@ -1,11 +1,11 @@
 ---
-title: "Wappy"
+title: ""
 local_redirect: true
 text_color: '#ffffff'
 redirect_url: 'projects/1_wappy'
 professional: true
 project_type: "app"
-tile_cover_uri : "/assets/images/projects/wappy/wappy_tile_cover.svg"
+tile_cover_uri : "/assets/images/projects/wappy/logo.png"
 date: "2017 - 2018"
 ---
 <div>
