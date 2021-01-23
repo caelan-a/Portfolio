@@ -12,7 +12,7 @@ export default function WelcomePage({ }) {
         <>
 
             <div class="motion-safe:animate-fadeIn h-screen" >
-                <div class="flex items-center justify-center h-1/2 ">
+                <div class={"flex items-center justify-center " + styles.headerBox}>
 
                     <div class="">
                         <Particles
@@ -37,11 +37,11 @@ export default function WelcomePage({ }) {
 
                     <div class=" text-center w-3/5 ">
 
-                        <p class="text-3xl md:text-4xl">
+                        <p class={"text-3xl md:text-4xl " + styles.name}>
                             Hi there, I’m <b>Caelan!</b>
                         </p>
                         <br></br>
-                        <p class="text-lg md:text-xl lg:text-2xl  ">
+                        <p class={"text-lg md:text-xl lg:text-2xl  " + styles.about}>
                             I’m a creator who uses technology and design to make things.
                 <br></br><br></br>
                 I studied physics at university and have been programming for most of my life.
@@ -51,17 +51,17 @@ export default function WelcomePage({ }) {
 
                         <div class="flex flex-col md:flex-row items-center justify-center  pt-2 md:space-x-4 my-5">
                             <Link href="/about" passHref>
-                                <button class='relative text-primary p-5 rounded text-2xl  overflow-visible  hover:bg-gray-100 ' >
+                                <button class='relative text-primary p-5 rounded text-2xl  overflow-visible  hover:bg-gray-100 w-60 ' >
                                     Get to know me
                 </button>
                             </Link>
                             <Link href="/project_list" passHref>
-                                <button class='relative text-primary p-5 rounded text-2xl  overflow-visible  hover:bg-gray-100 ' >
+                                <button class='relative text-primary p-5 rounded text-2xl  overflow-visible  hover:bg-gray-100 w-60 ' >
                                     See my work
                 </button>
                             </Link>
                             <Link href="/contact" passHref>
-                                <button class='relative text-primary p-5 rounded text-2xl  overflow-visible  hover:bg-gray-100 ' >
+                                <button class='relative text-primary p-5 rounded text-2xl  overflow-visible  hover:bg-gray-100 w-60 ' >
                                     Contact me
                 </button>
                             </Link>
