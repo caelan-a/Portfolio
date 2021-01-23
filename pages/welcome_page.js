@@ -4,6 +4,9 @@ import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { FaSoundcloud, } from 'react-icons/fa';
 import Link from 'next/link';
 import Particles from 'react-particles-js';
+
+import styles from './welcome_page.module.css';
+
 export default function WelcomePage({ }) {
     return (
         <>
@@ -22,7 +25,7 @@ export default function WelcomePage({ }) {
 
                     </div>
 
-                    <div class="relative flex items-center justify-center w-72 md:w-96 max-w-96 min-w-24 ">
+                    <div class={"relative flex items-center justify-center  " + styles.header}>
                         <img class="absolute w-full transform rotate-20" src={require('../public/assets/images/cloud.svg')} />
                         <img class="absolute w-3/5 rounded-full ring-8 ring-white " src="/assets/images/profile.jpg" alt="" />
                     </div>

@@ -1,0 +1,26 @@
+@media (max-height: 1200px) {
+    .header {
+        @apply w-96;
+    }
+}
+
+@media (max-height: 1000px) {
+    .header {
+        @apply w-96
+    }
+}
+
+
+@media (max-height: 900px) {
+    .header {
+        @apply w-72;
+    }
+}
+
+
+@media (max-height: 700px) {
+    .header {
+        @apply w-60;
+    }
+}
+
