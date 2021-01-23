@@ -6,7 +6,7 @@ professional: true
 text_color: '#39b1cd'
 project_type: "app"
 tile_cover_uri : "/assets/images/projects/buddyup/logo.png"
-date: "2017 - 2018"
+date: "2019"
 ---
 <div>
 <Image src="/assets/images/projects/buddyup/project_title.svg"  class="lg:w-1/2 w-full pt-5 px-5"

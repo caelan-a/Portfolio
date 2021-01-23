@@ -6,5 +6,5 @@ text_color: '#ffffff'
 professional: false
 project_type: "app"
 tile_cover_uri : "/assets/images/projects/toptracks/logo.png"
-date: "2017 - 2018"
+date: "2017"
 ---

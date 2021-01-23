@@ -69,7 +69,7 @@ export default function ContactPage({ }) {
             <Head>
                 <title>Caelan Anderson - Contact</title>
             </Head>
-            <div class="flex flex-col lg:flex-row items-center justify-center lg:pt-20 lg:pb-20">
+            <div class="flex flex-col lg:flex-row items-center justify-center lg:pt-20 lg:pb-20 motion-safe:animate-fadeIn">
                 <div class="lg:flex flex-col lg:flex-row shadow-lg  items-center justify-center h-full "style={{ backgroundColor: "#C2D6DB" }}>
                     <div class="flex flex-col lg:w-1/4 space-y-10 items-center justify-center pt-20 h-full" >
                         <img class="inline-block w-2/5 lg:w-3/5 rounded-full ring-8 ring-white " src="/assets/images/profile.jpg" alt="" />
