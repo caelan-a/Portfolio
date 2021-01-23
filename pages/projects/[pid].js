@@ -33,8 +33,11 @@ const Project = ({ post }) => {
       <div className="max-w-screen-lg mx-auto pt-5 motion-safe:animate-fadeIn markdown">
         <div
           className={markdownStyles['markdown']}
-          dangerouslySetInnerHTML={{ __html: post.content }}
+          dangerouslySetInnerHTML={{
+            __html: post.content }}
         />
+        {/* {post.content}<br/> */}
+        {/* {'<img src="/assets/images/projects/wappy/w.svg" className="invisible lg:visible w-12">'} */}
       </div>
     </>)
 }
@@ -47,7 +50,7 @@ export async function getStaticProps({ params }) {
 
   const post = post_api.getPostBySlug('projects', params.pid, [
     'title',
-    'content'
+    'content',
   ])
   // const content = await markdownToHtml(post.content || '')
 

@@ -4,7 +4,9 @@ import matter from 'gray-matter'
 export function getPostSlugs(subdir) {
     const fs = require("fs");
     const projectsDirectory = join(process.cwd(), `content/${subdir}`)
-    return fs.readdirSync(projectsDirectory)
+
+    var a = fs.readdirSync(join(process.cwd(), `content/${subdir}`), { withFileTypes: true }).filter((f) => f.name.includes('.md'))
+    return a
 }
 
 export function getPostBySlug(subdir, slug, fields = []) {
@@ -40,9 +42,9 @@ export function getPostBySlug(subdir, slug, fields = []) {
 }
 
 export function getAllPostsBySubdir(subdir, fields = []) {
-    const slugs = getPostSlugs(subdir)
-    const posts = slugs
-        .map((slug) => getPostBySlug(subdir, slug, fields))
+    const files = getPostSlugs(subdir)
+    const posts = files
+        .map((file) => getPostBySlug(subdir, file.name, fields))
     // sort posts by date in descending order
     // .sort((post1, post2) => (post1.date > post2.date ? '-1' : '1'))
     return posts

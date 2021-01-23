@@ -1,5 +1,9 @@
 module.exports = {
-  purge: ['./components/**/*.js', './pages/**/*.js'],
+  purge: {
+    preserveHtmlElements: true,
+    content: ['./components/**/*.js', './pages/**/*.js', './content/**/*.md'],
+  },
+
   variants: {
     animation: ["motion-safe"]
   },
