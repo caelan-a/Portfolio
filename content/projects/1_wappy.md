@@ -13,6 +13,8 @@ date: "2018 - 2020"
     layout='responsive' />
 <Image src="/assets/images/projects/wappy/company.svg" width="200" height="450" class=" " layout='responsive' />
 
+
+
 <section style="display: block">
     <h1>Client</h1>
     <p>ROBAWS is a company based in Belgium that offers “Administration software for construction and project
@@ -21,25 +23,24 @@ date: "2018 - 2020"
 
 <section class="pt-10 ">
 
-
 <Image src="/assets/images/projects/wappy/header.svg" class="lg:float-left lg:pr-32 w-1/2"/>
 
 <div>
     <h1>Project</h1>
 
     <p>
-        ROBAWS hired Apollo App Development to help construct a cross platform mobile app called Wappy to power
+        Beginning in 2019, ROBAWS hired me to help construct a cross platform mobile app called Wappy to power
         their administrative software suite.<br /> <br />
         The goal of this app was to allow project based companies such as those in construction to consolidate
-        both delivery of work orders to employees and tracking of work done and materials used.
-        This allows companies to maximise their efficiency and productivity while allowing workers to complete
-        their work and log required information reliably and conveniently.
+        both delivery of work orders to employees, tracking of work done and materials used.
+        This would allow companies to maximise their efficiency and productivity while simultaneously letting workers complete
+        their job and log required information reliably and conveniently.
         <br />
         <br />
 
-        Workers are able to log what materials they use, how much time they spend at sites etc.
-        More importantly they have a streamlined interface to receive workorders from their employers that
-        enclose all of the contact info, locations, documents and associated data to complete their work.
+        Workers were enabled to log what materials they usde, how much time they spent at sites etc.
+        More importantly they were given a streamlined interface to receive workorders from their employers that
+        enclosed all of the contact info, locations, documents and associated data to complete their work.
     </p>
 </div>
 
@@ -51,7 +52,7 @@ date: "2018 - 2020"
     <div>
         <h1>Implementation</h1>
         <p>
-            Beginning in mid-2019, I started development working with direction from ROBAWS CEO Michaël Van Robaeys
+            I started development working with direction from ROBAWS CEO Michaël Van Robaeys
             who is a seasoned software engineer himself.
             <br />
             <br />
@@ -74,14 +75,14 @@ date: "2018 - 2020"
             <br />
             <br />
 
-            The backend needed to be robust and easily extensible as it needed to have on-device storage of user
-            generated content as well as the ability to sync and update with a remote server to fetch new workorders
+            The backend needed to be robust and easily extensible as it required on-device storage of user
+            generated content as well as the ability to sync and update with a remote server to fetch new content from employers
             and update existing info. A service pattern approach was implemented along with a local SQL database
             (SQLFlite) and gateway for API calls.
             <br />
             <br />
 
-            Many special features were also implemented such as start and stop timers, digital signatures, remote
+            Many additional special features were implemented including start and stop timers, digital signatures, remote
             database tree navigation.
         </p>
 

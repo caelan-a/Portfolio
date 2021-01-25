@@ -7,6 +7,7 @@ import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 
 import Link from 'next/link';
+import {  AiFillGithub } from 'react-icons/ai';
 
 import MarkdownTimline from '../components/markdown_timeline'
 
@@ -31,7 +32,7 @@ export default function ProjectListPage({ project_list_data }) {
                                             <div class="absolute left-5 top-3 font-bold text-4xl transition duration-500 ease-in-out group-hover:opacity-100 opacity-100 md:opacity-0" style={{ color: p.data.text_color }}>{p.data.title}</div>
                                             <div class="absolute bottom-3 left-5 text-2xl group-hover:opacity-100 opacity-100 md:opacity-0 transition duration-500 ease-in-out" style={{ color: p.data.text_color }}> {p.data.professional ? 'Professional' : 'Personal'}</div>
                                             {/* <div class="absolute bottom-5 right-5  text-xl transition duration-500 ease-in-out group-hover:opacity-100 opacity-100 md:opacity-0" style={{ color: p.data.text_color }}>{p.data.date}</div> */}
-
+                                            <AiFillGithub class={"absolute bottom-3 right-5 " + (!p.data.professional ? '' : 'hidden')}style={{color: 'white'}}/>
 
                                         </div>
                                     </div>
