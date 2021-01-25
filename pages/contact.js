@@ -78,10 +78,10 @@ export default function ContactPage({ }) {
                 </div>
             </div> */}
 
-            <div class="flex flex-col lg:flex-row items-center justify-center lg:pt-20 lg:pb-20 motion-safe:animate-fadeIn h-screen">
-                <div class="md:flex flex-col md:flex-row shadow-lg  items-center justify-center h-full "style={{ backgroundColor: "#C2D6DB" }}>
+            <div class="flex flex-col lg:flex-row items-center justify-center motion-safe:animate-fadeIn h-screen w-full">
+                <div class="md:flex flex-col md:flex-row  items-center justify-center h-full w-full "style={{ backgroundColor: "#C2D6DB" }}>
                     <div class="hidden md:flex flex-col lg:w-1/4 space-y-10 items-center justify-center pt-20 h-full" >
-                        <img class="inline-block w-2/5 lg:w-3/5 rounded-full ring-8 ring-white " src="/assets/images/profile.jpg" alt="" />
+                        <img class="inline-block w-2/5 lg:w-1/2 rounded-full ring-8 ring-white " src="/assets/images/profile.jpg" alt="" />
                         <div class="flex flex-row items-center justify-center space-x-10 space-y-0 lg:pt-5 pb-10" >
                             <a href='https://www.linkedin.com/in/caelan-anderson-539547154'>
                                 <AiFillLinkedin style={{ width: '25px', height: '25px', color: "white" }} />
@@ -103,7 +103,7 @@ export default function ContactPage({ }) {
                         </div>
 
                     </div>
-                    <div class="flex flex-col lg:w-3/4 space-y-10 shadow-sm px-20 py-10 h-full" style={{ backgroundColor: "white" }}>
+                    <div class="flex flex-col lg:w-3/4 space-y-10  px-20 py-10 h-full shadow-lg" style={{ backgroundColor: "white" }}>
                         <div className="">
                             <div className=" space-y-4 pt-5">
                                 <h1 class="text-4xl ">Contact Me</h1>
@@ -172,8 +172,8 @@ export default function ContactPage({ }) {
                                             value={inputs.message}
                                             class="focus:border-col-orange"
                                             style={{
-                                                minHeight: "75px",
-                                                maxHeight: "75px",
+                                                minHeight: "150px",
+                                                maxHeight: "150px",
                                                 width: "100%",
                                                 border: "none",
                                                 outline: 'none',
@@ -195,7 +195,7 @@ export default function ContactPage({ }) {
                                             padding: '0px 24px',
                                             height: '48px',
                                             backgroundColor: '#F83850',
-                                            margin: '16px 0px',
+                                            margin: '0px 0px',
                                             border: 'none',
                                             borderRadius: '0px',
                                             cursor: 'pointer',
