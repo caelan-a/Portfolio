@@ -34,8 +34,8 @@ const programmingSkills = [
     },
     {
         name: 'C / C++',
-        level: 'Intermediate',
-        percentage: 50,
+        level: 'Advanced',
+        percentage: 75,
         color: '#c38d9e',
     },
     {

@@ -69,7 +69,16 @@ export default function ContactPage({ }) {
             <Head>
                 <title>Caelan Anderson - Contact</title>
             </Head>
-            <div class="flex flex-col lg:flex-row items-center justify-center lg:pt-20 lg:pb-20 motion-safe:animate-fadeIn">
+            {/* <div class="flex flex-row h-screen">
+                <div class="w-1/4 h-1/2" style={{backgroundColor:'red'}}>
+
+                </div>
+                <div class="w-3/4 h-1/2"  style={{backgroundColor: 'blue'}}>
+
+                </div>
+            </div> */}
+
+            <div class="flex flex-col lg:flex-row items-center justify-center lg:pt-20 lg:pb-20 motion-safe:animate-fadeIn h-screen">
                 <div class="lg:flex flex-col lg:flex-row shadow-lg  items-center justify-center h-full "style={{ backgroundColor: "#C2D6DB" }}>
                     <div class="flex flex-col lg:w-1/4 space-y-10 items-center justify-center pt-20 h-full" >
                         <img class="inline-block w-2/5 lg:w-3/5 rounded-full ring-8 ring-white " src="/assets/images/profile.jpg" alt="" />
@@ -94,7 +103,7 @@ export default function ContactPage({ }) {
                         </div>
 
                     </div>
-                    <div class="flex flex-col lg:w-3/4 space-y-10 shadow-sm p-20 " style={{ backgroundColor: "white" }}>
+                    <div class="flex flex-col lg:w-3/4 space-y-10 shadow-sm px-20 py-10 h-full" style={{ backgroundColor: "white" }}>
                         <div className="">
                             <div className=" space-y-4">
                                 <h1 class="text-4xl ">Contact Me</h1>
@@ -104,7 +113,8 @@ export default function ContactPage({ }) {
                         <div className="class">
                             <form onSubmit={handleOnSubmit} class="flex flex-col lg:w-1/2 space-y-5">
 
-
+                                <div class="flex flex-col lg:flex-row">
+                                    </div>
 
                                 <div className="">
                                     <input
@@ -162,8 +172,8 @@ export default function ContactPage({ }) {
                                             value={inputs.message}
                                             class="focus:border-col-orange"
                                             style={{
-                                                minHeight: "100px",
-                                                maxHeight: "100px",
+                                                minHeight: "75px",
+                                                maxHeight: "75px",
                                                 width: "100%",
                                                 border: "none",
                                                 outline: 'none',
@@ -202,10 +212,6 @@ export default function ContactPage({ }) {
                                     </div>
 
                                 </div>
-                                {/* {status.info.error && (
-                                    <div className="error">Error: {status.info.msg}</div>
-                                )}
-                                {!status.info.error && status.info.msg && <p>{status.info.msg}</p>} */}
 
                             </form>
                         </div>
