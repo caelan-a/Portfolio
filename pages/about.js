@@ -9,6 +9,77 @@ import ReactMarkdown from "react-markdown";
 import Link from 'react';
 
 import MarkdownTimline from '../components/markdown_timeline'
+import Skills from '../components/skills';
+import { FaCode, FaPaintBrush, FaReact, FaWordpress } from 'react-icons/fa';
+
+
+const programmingSkills = [
+    {
+        name: 'Python',
+        level: 'Expert',
+        color: '#c38d9e',
+        percentage: 100,
+    },
+    {
+        name: 'SQL',
+        level: 'Intermediate',
+        color: '#c38d9e',
+        percentage: 50,
+    },
+    {
+        name: 'Dart',
+        level: 'Expert',
+        percentage: 100,
+        color: '#c38d9e',
+    },
+    {
+        name: 'C / C++',
+        level: 'Intermediate',
+        percentage: 50,
+        color: '#c38d9e',
+    },
+    {
+        name: 'Java',
+        level: 'Advanced',
+        percentage: 75,
+        color: '#c38d9e',
+    },
+    {
+        name: 'HTML/CSS',
+        level: 'Advanced',
+        percentage: 75,
+        color: '#c38d9e',
+    },
+    {
+        name: 'JavaScript',
+        level: 'Advanced',
+        percentage: 75,
+        color: '#c38d9e',
+    },
+]
+
+
+const designSkills = [
+    {
+        name: 'Adobe Illustrator',
+        level: 'Advanced',
+        color: '#c38d9e',
+        percentage: 75,
+    },
+    {
+        name: 'Adobe Photoshop',
+        level: 'Advanced',
+        percentage: 75,
+        color: '#Advanced',
+    },
+    {
+        name: 'Figma',
+        level: 'Advanced',
+        percentage: 75,
+        color: '#c38d9e',
+    },
+]
+
 
 export default function AboutPage({ experience_data, education_data }) {
     const educationList = education_data.map((data_element) => matter(data_element));
@@ -72,7 +143,39 @@ export default function AboutPage({ experience_data, education_data }) {
                     <MarkdownTimline data={education_data} highlightFirst={false} title="Education" ></MarkdownTimline>
                 </div>
 
+                <p class="font-sans text-primary text-6xl items-center justify-center text-center pt-10 pb-10 lg:pb-0">
+                    Skills </p>
+                <div class="flex flex-col lg:flex-row justify-between">
+                    <div class="flex flex-col lg:w-1/2 items-center">
+                        <FaCode style={{ width: '50px', height: '50px', color: '#555555' }} />
+                        <Skills color='#ffbe2c' skillsData={programmingSkills} />
+                    </div>
 
+                    <div class="flex flex-col lg:w-1/2 items-center">
+                        <FaPaintBrush style={{ width: '50px', height: '50px', color: '#555555' }} />
+                        <Skills color='#c38d9e' skillsData={designSkills} />
+                    </div>
+                </div>
+
+                {/* <div>
+                    <div class="m-10 pb-5">
+                        <p class="font-sans text-primary text-6xl items-center justify-center text-center pb-5">
+                            Frameworks
+                    </p>
+                        <div class="flex flex-wrap space-x-5 justify-center">
+                        <div>
+                                <Image src="/assets/icons/flutter.png" width={50} height={50} style={{color: 'red'}} />
+                            </div>
+                            <FaWordpress style={{ width: '50px', height: '50px', color: '#aaaaaa' }} />
+                            <FaReact style={{ width: '50px', height: '50px', color: '#aaaaaa' }} />
+
+
+                            <div>
+                                <Image src="/assets/icons/sql.png" width={50} height={50} style={{color: '#aaaaaa'}} />
+                            </div>
+                        </div>
+                    </div>
+                </div> */}
             </Layout>
         </>
     );
