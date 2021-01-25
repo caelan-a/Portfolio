@@ -8,7 +8,8 @@
 
 .markdown button {
   @apply border rounded-md focus:outline-none;
-
+  color: #29D368;
+  border-color: #29D368;
   padding: 1em; 
   display: block;
   margin-left: auto;
@@ -18,12 +19,6 @@
 .markdown button::hover {
   background-color:#29D368; 
 }
-
-.blue_button button {
-  color: #26aae1;
-  border-color: #26aae1;
-}
-
 
 .markdown p,
 .markdown ul,
