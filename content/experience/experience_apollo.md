@@ -1,6 +1,7 @@
 ---
 title: "Apollo App Development"
 subtitle: "Software Developer (Self Employed)"
+link: "http://caelana.com/project_list"
 date: "2018 - Present"
 iconPath: "/assets/images/apollo.svg"
 

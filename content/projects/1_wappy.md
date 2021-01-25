@@ -17,7 +17,7 @@ date: "2018 - 2020"
 
 <section style="display: block">
     <h1>Client</h1>
-    <p>ROBAWS is a company based in Belgium that offers “Administration software for construction and project
+    <p><a href="https://robaws.be/"><b>ROBAWS</b></a> is a company based in Belgium that offers “Administration software for construction and project
         companies.”</p>
 </section>
 

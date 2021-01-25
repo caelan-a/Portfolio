@@ -2,6 +2,7 @@
 title: "National Australia Bank"
 subtitle: "Analyst"
 date: "2017 - 2018"
+link: "https://www.nab.com.au/"
 iconPath: "/assets/images/nab.svg"
 
 ---

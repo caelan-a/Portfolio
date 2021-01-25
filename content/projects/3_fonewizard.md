@@ -14,7 +14,7 @@ date: "2017 - 2018"
 
 <section style="display: block">
     <h1>Client</h1>
-    <p><b>Fone Wizard</b> (subsidary of MTR Ltd) is a company that aims to save on the amount of electronic waste that ends up in landfill. They do this by buying and selling refurbished devices such as phones, laptops and tablets. </p>
+    <p><a href="https://www.fonewizard.co.uk/"><b>FoneWizard</b></a> (subsidary of MTR Ltd) is a company that aims to save on the amount of electronic waste that ends up in landfill. They do this by buying and selling refurbished devices such as phones, laptops and tablets. </p>
 </section>
 
 <section class="">

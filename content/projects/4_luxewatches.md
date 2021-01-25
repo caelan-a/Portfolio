@@ -14,7 +14,7 @@ date: "2019-2021"
 
 <section style="display: block">
     <h1>Client</h1>
-<p><b>Luxe Watches</b> is the leading independent luxury watch retailer in the UK. Based out of London, they both buy and sell luxury watches from from the instantly recognisable Rolex to the Richard Mille limited edition timepiece.</p>
+<p><a href="https://www.luxewatches.co.uk/"><b>Luxe Watches</b></a> is the leading independent luxury watch retailer in the UK. Based out of London, they both buy and sell luxury watches from from the instantly recognisable Rolex to the Richard Mille limited edition timepiece.</p>
 </section>
 
 <section class="">

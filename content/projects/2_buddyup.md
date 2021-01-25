@@ -14,7 +14,7 @@ date: "2019"
 
 <section style="display: block">
     <h1>Client</h1>
-    <p>The <b>University of Melbourne</b> group referred to as the BuddyUp team works to bring students together through a combination of technology and human interaction. Their vision is to maximise feelings of belonging and connection among university students.</p>
+    <p><a href="https://www.unimelb.edu.au/"><b>The University of Melbourne</b></a> group referred to as the BuddyUp team works to bring students together through a combination of technology and human interaction. Their vision is to maximise feelings of belonging and connection among university students.</p>
 </section>
 
 <section class="">

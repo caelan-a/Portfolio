@@ -40,7 +40,7 @@ function MarkdownTimline({ data, highlightFirst, title }) {
                     }
                 
                 `}</style>
-                <VerticalTimeline class="vertical-timeline-custom-line"  animate={true} >
+                <VerticalTimeline class="vertical-timeline-custom-line" animate={true} >
                     {RealData.map((blog, i) => (
                         i == 0 && highlightFirst == true ?
                             <VerticalTimelineElement
@@ -49,31 +49,39 @@ function MarkdownTimline({ data, highlightFirst, title }) {
                                 contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                                 date={blog.data.date}
-                                
+
                                 icon={<img src={blog.data.iconPath} />}
                             >
-                                <h1 style={{ color: "white" }}>{blog.data.title}</h1>
-                                <h2 style={{ color: "white" }}>{blog.data.subtitle}</h2>
-                                <br />
-                                <ReactMarkdown
-                                    escapeHtml={false}
-                                    source={blog.content}
-                                />
+                                <a href={blog.data.link}>
+
+                                    <h1 style={{ color: "white" }}>{blog.data.title}</h1>
+                                    <h2 style={{ color: "white" }}>{blog.data.subtitle}</h2>
+                                    <br />
+                                    <ReactMarkdown
+                                        escapeHtml={false}
+                                        source={blog.content}
+                                    />
+                                </a>
+
                             </VerticalTimelineElement> :
                             <VerticalTimelineElement
 
                                 date={blog.data.date}
                                 icon={<img src={blog.data.iconPath} />}
                             >
-                                <h1 >{blog.data.title}</h1>
-                                <h2 >{blog.data.subtitle}</h2>
-                                <br />
 
-                                <ReactMarkdown
-                                    escapeHtml={false}
-                                    source={blog.content}
-                                    renderers={renderers}
-                                />
+                                <a href={blog.data.link}>
+                                    <h1 >{blog.data.title}</h1>
+                                    <h2 >{blog.data.subtitle}</h2>
+                                    <br />
+
+                                    <ReactMarkdown
+                                        escapeHtml={false}
+                                        source={blog.content}
+                                        renderers={renderers}
+                                    />
+                                </a>
+
                             </VerticalTimelineElement>
                     ))}
 

@@ -115,7 +115,7 @@ export default function AboutPage({ experience_data, education_data }) {
                         <div class="  flex flex-col md:flex-row items-center justify-between md:space-x-20 space-x-0">
 
                             <p class="font-sans text-primary md:w-2/3 md:order-1 order-3">
-                                Since 2018 I’ve been creating apps and websites for businesses and institutions under the name <b>Apollo App Development</b>. In doing so, I’ve been priveleged to do work for companies across Europe and Australia including <a href="https://www.unimelb.edu.au/"><b>The University of Melbourne</b></a>, <a href="https://robaws.be/"><b>ROBAWS</b></a>, <a href="https://www.mtr.co.uk/"><b>MTR Ltd</b></a> and <a href="https://www.luxewatches.co.uk/"><b>Luxe Watches</b></a>
+                                Since 2018 I’ve been creating apps and websites for businesses and institutions under the name Apollo App Development. In doing so, I’ve been priveleged to do work for companies across Europe and Australia including <a href="https://www.unimelb.edu.au/"><b>The University of Melbourne</b></a>, <a href="https://robaws.be/"><b>ROBAWS</b></a>, <a href="https://www.mtr.co.uk/"><b>MTR Ltd</b></a> and <a href="https://www.luxewatches.co.uk/"><b>Luxe Watches</b></a>
                             </p>
                             <img class="w-60 transform rotate-11 animate-wiggle float-right order-2 pb-20 md:pb-0" src={require('../public/assets/images/phone.svg')} />
 
