@@ -11,7 +11,7 @@ import Link from 'react';
 import MarkdownTimline from '../components/markdown_timeline'
 import Skills from '../components/skills';
 import { FaCode, FaPaintBrush, FaReact, FaWordpress } from 'react-icons/fa';
-
+import SlideIn from '../components/slide_in'
 
 const programmingSkills = [
     {
@@ -96,10 +96,13 @@ export default function AboutPage({ experience_data, education_data }) {
                     <title>Caelan Anderson - About</title>
                 </Head>
                 <div class="w-full flex h-full justify-center motion-safe:animate-fadeIn">
-
+                        
+   
                     <div class="pt-20 flex-wrap h-full items-center text-lg text-center md:text-left w-3/5 space-y-20">
 
+
                         <div class=" flex flex-col md:flex-row items-center justify-between md:space-x-20 space-x-0">
+
                             <img class="inline-block w-48 rounded-full ring-2 ring-white " src="/assets/images/profile.jpg" alt="" />
                             <p class="font-sans text-primary pt-10">
                                 Hi! My name’s Caelan. I’m 22 years old based out of Melbourne, Australia
@@ -115,6 +118,7 @@ export default function AboutPage({ experience_data, education_data }) {
                                 Since 2018 I’ve been creating apps and websites for businesses and institutions under the name <b>Apollo App Development</b>. In doing so, I’ve been priveleged to do work for companies across Europe and Australia including <a href="https://www.unimelb.edu.au/"><b>The University of Melbourne</b></a>, <a href="https://robaws.be/"><b>ROBAWS</b></a>, <a href="https://www.mtr.co.uk/"><b>MTR Ltd</b></a> and <a href="https://www.luxewatches.co.uk/"><b>Luxe Watches</b></a>
                             </p>
                             <img class="w-60 transform rotate-11 animate-wiggle float-right order-2 pb-20 md:pb-0" src={require('../public/assets/images/phone.svg')} />
+
 
                         </div>
 

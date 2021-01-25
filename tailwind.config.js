@@ -24,6 +24,14 @@ module.exports = {
     },
     extend: {
       keyframes: {
+        slideInFromLeft: {
+          '0%': { transform: 'translateX(-20px)', opacity: 0 },
+          '100%' : { transform: 'translateX(0px)', opacity: 1 }
+        },
+        slideInFromRight: {
+          '0%': { transform: 'translate-x-5' },
+          '100%' : { transform: 'translate-x-0' }
+        },
         wiggle: {
           '0%, 100%': { transform: 'rotate(-1deg)' },
           '50%': { transform: 'rotate(1deg)' },
@@ -35,7 +43,9 @@ module.exports = {
       },
       animation: {
         wiggle: 'wiggle 3s ease-in-out infinite',
-        fadeIn: "fadeIn 250ms ease-in forwards"
+        fadeIn: "fadeIn 250ms ease-in forwards",
+        slideInFromLeft: "slideInFromLeft 250ms ease-in-out forwards",
+        slideInFromRight: "slideInFromRight 250ms ease-in forwards"
       },
       rotate: {
         '-180': '-180deg',

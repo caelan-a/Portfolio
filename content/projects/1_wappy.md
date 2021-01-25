@@ -21,6 +21,7 @@ date: "2018 - 2020"
 
 <section class="pt-10 ">
 
+
 <Image src="/assets/images/projects/wappy/header.svg" class="lg:float-left lg:pr-32 w-1/2"/>
 
 <div>

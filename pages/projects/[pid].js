@@ -5,6 +5,8 @@ import ReactMarkdown from "react-markdown"
 import Image from "next/image"
 import NavBar from '../../components/navbar'
 import Head from 'next/head'
+import SlideIn from '../../components/slide_in';
+
 const Project = ({ post }) => {
   const router = useRouter()
   const { pid } = router.query

@@ -13,7 +13,7 @@ export default function SkillElement({ title, icon, level, percentage, color }) 
     });
 
 
-    return <div class="transition-all duration-1000 ease-in-out rounded-lg shadow-lg p-3 m-1 flex flex-row justify-between" style={{ width: inView ? (percentage + '%') : '50%', opacity: inView ? '100%' : '0%', backgroundColor: color }} ref={ref}>
+    return <div class="transition-all duration-1000 ease-in-out rounded-lg shadow-lg p-3 m-1 flex flex-row justify-between motion-safe:transition-none" style={{ width: inView ? (percentage + '%') : '50%', opacity: inView ? '100%' : '0%', backgroundColor: color }} ref={ref}>
         <p style={{ color: "white" }} class="font-bold">{title}</p>
         <p style={{ color: "white" }} class="font-bold">{level}</p>
 

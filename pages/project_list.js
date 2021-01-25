@@ -25,8 +25,8 @@ export default function ProjectListPage({ project_list_data }) {
                             {projectList.map((p, i) => (
 
                                 <Link key={i} href={p.data.redirect_url}>
-                                    <div if={"tile-" + i} class="rounded-lg shadow-lg"> 
-                                        <div class="group relative content-center items-center justify-center" style={{ cursor: 'pointer' }}>
+                                    <div if={"tile-" + i} class="rounded-lg shadow-lg transition transform hover:-translate-y-1 motion-reduce:transition-none "> 
+                                        <div class="group relative content-center items-center justify-center " style={{ cursor: 'pointer' }}>
                                             <Image src={p.data.tile_cover_uri} class=" transition duration-500 ease-in-out hover:opacity-80 opacity-100 rounded-lg" width={200} height={200} layout="responsive" priority={true} />
                                             <div class="absolute left-5 top-3 font-bold text-4xl transition duration-500 ease-in-out group-hover:opacity-100 opacity-100 md:opacity-0" style={{ color: p.data.text_color }}>{p.data.title}</div>
                                             <div class="absolute bottom-3 left-5 text-2xl group-hover:opacity-100 opacity-100 md:opacity-0 transition duration-500 ease-in-out" style={{ color: p.data.text_color }}> {p.data.professional ? 'Professional' : 'Personal'}</div>
