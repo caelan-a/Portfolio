@@ -35,7 +35,7 @@ export default function WelcomePage({ }) {
 
                 <div class="h-96 flex flex-wrap  items-center justify-center ">
 
-                    <div class=" text-center w-3/5 ">
+                    <div class=" text-center lg:w-3/5 px-5 ">
 
                         <p class={"text-3xl md:text-4xl " + styles.name}>
                             Hi there, I’m <b>Caelan!</b>
