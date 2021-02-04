@@ -93,7 +93,7 @@ Customer input forms for contact, payment and shipping was a great feature of th
         </p>
 
     </div>
-    <Image src="/assets/images/projects/fonewizard/s_3.png" class="lg:float-right lg:pl-32  w-full lg:w-1/2"/>
+    <Image src="/assets/images/projects/fonewizard/s_2.png" class="lg:float-right lg:pl-32  w-full lg:w-1/2"/>
 
 </section>
 <section class="flex flex-col lg:flex-row">
