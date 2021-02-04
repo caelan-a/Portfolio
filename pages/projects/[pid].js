@@ -31,7 +31,7 @@ const Project = ({ post }) => {
       <Head>
         <title>Caelan's Projects - {post.title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:image" content={"http://caelana.com" + post.tile_cover_uri} />
+        <meta property="og:image" content={"https://caelana.com" + post.tile_cover_uri} />
         <meta property="og:title" content={post.title} key="ogtitle" />
       </Head>
       <NavBar />
@@ -56,6 +56,7 @@ export async function getStaticProps({ params }) {
   const post = post_api.getPostBySlug('projects', params.pid, [
     'title',
     'content',
+    'tile_cover_uri'
   ])
   // const content = await markdownToHtml(post.content || '')
 
