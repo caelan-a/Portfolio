@@ -56,10 +56,7 @@ date: "2018 - 2020"
         <p>
             I started development working with direction from ROBAWS CEO Michaël Van Robaeys
             who is a seasoned software engineer himself.
-            <br />
-            <br />
-            The first step was to build out the UI using tools such as Figma. After that it was implemented in
-            Google’s Flutter framework.
+
             <br />
             <br />
 
