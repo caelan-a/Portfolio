@@ -31,7 +31,7 @@ const Project = ({ post }) => {
       <Head>
         <title>Caelan's Projects - {post.title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:image" content="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" key="ogimage" />
+        <meta property="og:image:secure_url" content={"https://caelana.com" + post.tile_cover_uri} />
         <meta property="og:title" content={post.title} key="ogtitle" />
       </Head>
       <NavBar />
