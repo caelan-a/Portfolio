@@ -7,7 +7,9 @@ professional: true
 project_type: "app"
 tile_cover_uri : "/assets/images/projects/wappy/logo.png"
 date: "2018 - 2020"
+
 ---
+
 <div>
 <Image src="/assets/images/projects/wappy/project_title.svg" width="600" height="450" class="p-10 pb-10 pt-20"
     layout='responsive' />
