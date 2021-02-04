@@ -40,7 +40,7 @@ date: "2018 - 2020"
         <br />
         <br />
 
-        Workers were enabled to log what materials they usde, how much time they spent at sites etc.
+        Workers were enabled to log what materials they used, how much time they spent at sites etc.
         More importantly they were given a streamlined interface to receive workorders from their employers that
         enclosed all of the contact info, locations, documents and associated data to complete their work.
     </p>

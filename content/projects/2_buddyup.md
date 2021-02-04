@@ -31,7 +31,7 @@ The goal was to have a platform so streamlined and easy that students would jump
 
 <br/><br/>The project scope included:<br/>
 • Realtime Firebase database to host account, message, and content data <br/>
-• Google App Engine instance to serve as an API that would run algorithm to match students together into appropriate groups<br/>
+• Google App Engine instance to serve as an API that would run an algorithm to match students together into appropriate groups<br/>
 • Cross platform Flutter app for users to engage on the platform <br/>
 
 
@@ -49,7 +49,7 @@ The goal was to have a platform so streamlined and easy that students would jump
         <p>
           An important first step was designing the data model for this project as there were many moving parts. 
 <br/><br/>
-One of the most crucial parts of the app was automatic retrieval of timetable and subject information. Due to limitations from the University, a scraper was constructed for the prototype, this was heavily involved as it needed to be robust enough to handle any errors that may arise (of which there are countless).
+One of the most crucial parts of the app was automatic retrieval of timetable and subject information. Due to limitations from the University, a scraper was constructed for the prototype, this was heavily involved as it needed to be robust enough to handle any errors that may arise.
 <br/><br/>
 The next step was to build the software that would analyse the Firebase database to match students who both shared a subject and wanted to form a study group. This was done using python on a GAE that is connected to the Firebase database.
 <br/><br/>
