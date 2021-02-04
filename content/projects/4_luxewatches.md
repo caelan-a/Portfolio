@@ -13,21 +13,26 @@ date: "2019-2021"
     layout='responsive' />
 
 <section style="display: block">
+
     <h1>Client</h1>
 <p><a href="https://www.luxewatches.co.uk/"><b>Luxe Watches</b></a> is the leading independent luxury watch retailer in the UK. Based out of London, they both buy and sell luxury watches from from the instantly recognisable Rolex to the Richard Mille limited edition timepiece.</p>
 </section>
 
+    <Image src="/assets/images/projects/luxewatches/1.png" class="w-full lg:w-3/4 p-5"/>
+
 <section class="">
+
 
 <!-- <Image src="/assets/images/projects/buddyup/s_1.svg" class="lg:float-left lg:pr-32 w-1/2"/> -->
 
 <div>
+
     <h1>Project</h1>
 
     <p>
 Beginning in 2019, Luxe Watches hired Apollo App Development to design and build and instore app that would allow staff to conduct transactions digitally that were previously done through pen and paper. This was to allow transactions to be submitted along with details and images to their backend which would allow business to be much more efficient and reliable. 
-<br/>
-<br/>
+    <br/><br/>
+
 This app handled a range of different transaction types requiring differing forms while at the same time providing a clean and quick interface that allowed transactions to be completed and submitted to their database quickly. It was designed to function with the existing wordpress backend. 
 <br/>
 <br/>
@@ -40,6 +45,8 @@ Later on, the app was updated to allow remote signature signing which required d
 </div>
 
 </section>
+    <Image src="/assets/images/projects/luxewatches/2.png" class="lg:w-3/4 w-full p-5 "/>
+
 
 <section class="pt-20  ">
 
@@ -58,6 +65,7 @@ To facilitate the remote digital signature functionality, the wordpress plugin w
     <!-- <Image src="/assets/images/projects/buddyup/s_2.svg" class="lg:float-right lg:pl-32  w-full lg:w-1/2"/> -->
 
 </section>
+    <Image src="/assets/images/projects/luxewatches/5.png" class="lg:w-full w-full p-5 "/>
 
 <section>
 
