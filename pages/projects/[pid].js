@@ -30,7 +30,7 @@ const Project = ({ post }) => {
     <>
       <Head>
         <title>Caelan's Projects - {post.title}</title>
-        <meta property="og:image" content={post.tile_cover_uri} key="ogimage" />
+        <meta property="og:image" content={"https://caelana.com" + post.tile_cover_uri} key="ogimage" />
         <meta property="og:title" content={post.title} key="ogtitle" />
       </Head>
       <NavBar />
