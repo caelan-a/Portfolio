@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "FoneWizard"
 local_redirect: true
 redirect_url: 'projects/3_fonewizard'
 text_color: '#26aae1'

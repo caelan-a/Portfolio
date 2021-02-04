@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "BuddyUp"
 local_redirect: true
 redirect_url: 'projects/2_buddyup'
 professional: true

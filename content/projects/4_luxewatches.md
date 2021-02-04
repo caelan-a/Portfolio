@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Luxe Watches"
 local_redirect: true
 redirect_url: 'projects/4_luxewatches'
 text_color: '#666666'

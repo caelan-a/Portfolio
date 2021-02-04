@@ -30,12 +30,8 @@ const Project = ({ post }) => {
     <>
       <Head>
         <title>Caelan's Projects - {post.title}</title>
-        <meta
-          property="og:title"
-          content={post.title}
-        />
-        <meta name="twitter:card" content="summary" />
-        <meta property="og:image" content={post.tile_cover_uri} />
+        <meta property="og:image" content={post.tile_cover_uri} key="ogimage" />
+        <meta property="og:title" content={post.title} key="ogtitle" />
       </Head>
       <NavBar />
       <div className="max-w-screen-lg mx-auto pt-5 motion-safe:animate-fadeIn markdown">

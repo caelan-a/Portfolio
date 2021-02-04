@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Wappy"
 local_redirect: true
 text_color: '#ffffff'
 redirect_url: 'projects/1_wappy'
