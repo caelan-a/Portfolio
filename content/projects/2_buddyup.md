@@ -25,7 +25,7 @@ date: "2019"
     <h1>Project</h1>
 
     <p>
-        Beginning in 2018, The University of Melbourne on behalf of the BuddyUp team commissioned Apollo App Development to construct a platform that would allow students to form study groups based on shared subjects with others they may not even know. 
+        Beginning in 2018, The University of Melbourne on behalf of the BuddyUp team commissioned me to construct a platform that would allow students to form study groups based on shared subjects with others they may not even know. 
 <br/><br/>
 The goal was to have a platform so streamlined and easy that students would jump on, have their subjects and timetable already available and be in a group within hours.
 
