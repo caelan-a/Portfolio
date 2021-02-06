@@ -56,6 +56,12 @@ const programmingSkills = [
         percentage: 75,
         color: '#c38d9e',
     },
+    {
+        name: 'R',
+        level: 'Intermediate',
+        percentage: 50,
+        color: '#c38d9e',
+    },
 ]
 
 

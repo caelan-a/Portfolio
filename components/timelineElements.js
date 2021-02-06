@@ -4,7 +4,7 @@ let timelineElements = [
         title: "Melbourne Space Program",
         subtitle: "Software Engineer",
         description:
-            "Joined Melbourne Space Program as a software engineer. Worked on Autonomous Mars Rover project where I was developing systems for ground segmentation and object detection using SLAM techniques. (Python, C++)",
+            "Joined Melbourne Space Program as a software engineer. Worked on Autonomous Mars Rover project where I was developing systems for ground segmentation and object detection for use in SLAM. (Python, C++)",
         date: "2020",
         iconPath: 'msp',
     },
