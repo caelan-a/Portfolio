@@ -73,6 +73,45 @@ input, select, textarea {
 }
 
 /* Custom */
+.project-image {
+	
+}
+
+
+/* Project */
+.project img{
+	display: block;
+}
+
+.center {
+	margin:auto;
+	 display:table;
+  }
+
+/* Rounded border */
+hr.rounded {
+  border-top: 4px solid #bbb;
+  border-radius: 5px;
+}
+
+.resume {
+	width: 100%;
+}
+
+.resume h1 {
+	font-size: larger;
+}
+
+.resume h2 {
+	font-size: x-large;
+	font-weight: normal;
+}
+
+.resume p {
+	font-size: large;
+}
+
+
 #sidebar .nav-footer {
 	position: fixed;
 	bottom: 0;
@@ -3273,7 +3312,8 @@ input, select, textarea {
 .logo {
 	width: 1em;
 	height: 1em;
-  }
+	vertical-align:middle;  
+}
 
 	ul.icons {
 		cursor: default;
@@ -3680,7 +3720,8 @@ input, select, textarea {
 		.wrapper > .inner {
 			padding: 5em 5em 3em 5em ;
 			max-width: 100%;
-			width: 75em;
+			width: 100em; 
+			/* changed above from 75 to 100 */
 		}
 
 			@media screen and (max-width: 1680px) {
