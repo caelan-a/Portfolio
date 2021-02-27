@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Caelan Anderson - Wappy</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="../assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Header -->
+    <header id="header">
+        <nav class="">
+            <ul style="text-align: center;">
+                <li><a href="../index.html#two">Back</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper ">
+
+        <!-- Main -->
+        <section id="main" class="wrapper">
+            <div class="inner">
+
+                <span class="image fit" style="max-width: 24em; 	margin:auto;
+                display:table;"><img src="../images/projects/wappy/logo.png"></span>
+                <!-- <span class="image fit" style="max-width: 12em; 	margin:auto;
+                display:table; padding-top: 2em; padding-bottom: 4em;" class="center"><img
+                        src="../images/projects/wappy/company.svg"></span>
+ -->
+
+
+
+                <section style="display: block; overflow: hidden">
+                    <h1>Client</h1>
+                    <p><a href="https://robaws.be/"><b>ROBAWS</b></a> is a company based in Belgium that offers
+                        “Administration software for construction and project
+                        companies.”</p>
+                    <img src="../images/projects/wappy/header.svg" style="float: left;  max-width: 18em; margin-right: 5em; ">
+                    <br />
+                    <br />
+                    <h1>Project</h1>
+
+                    <p>
+                        Beginning in 2019, ROBAWS hired me to help construct a cross platform mobile app called Wappy to
+                        power
+                        their administrative software suite.<br /> <br />
+                        The goal of this app was to allow project based companies such as those in construction to
+                        consolidate
+                        both delivery of work orders to employees, tracking of work done and materials used.
+                        This would allow companies to maximise their efficiency and productivity while simultaneously
+                        letting workers complete
+                        their job and log required information reliably and conveniently.
+                        <br />
+                        <br />
+
+                        Workers were enabled to log what materials they used, how much time they spent at sites etc.
+                        More importantly they were given a streamlined interface to receive workorders from their
+                        employers that
+                        enclosed all of the contact info, locations, documents and associated data to complete their
+                        work.
+                    </p>
+                </section>
+            </div>
+        </section>
+
+        <!-- Implementation -->
+        <section class="wrapper style1">
+            <div class="inner">
+
+                <section style="overflow: hidden;">
+                    <img src="../images/projects/wappy/ss_2.svg" style="float: right;  max-width: 20em; margin-left: 5em; margin-top: 3em;">
+
+                    <h1>Implementation</h1>
+                    <p>
+                        I started development working with direction from ROBAWS CEO Michaël Van Robaeys
+                        who is a seasoned software engineer himself.
+
+                        <br />
+                        <br />
+
+                        There were many design considerations from both a UI and backend perspective.
+                        <br />
+                        <br />
+
+                        With respect to the UI, first and foremost was the requirement of multiple languages given the
+                        wide
+                        geography of the app’s audience. This was supported by adding internationalisation (I18n) and
+                        localisation (l10n) using the Flutter framework. As of writing this there are a multitude of
+                        European
+                        languages that are now supported.
+                        Secondly, given the wide array of functions this app supports, a series of decisions to make the
+                        UI
+                        clean looking and easy to navigate were made. This included the TabView and flat design of tiles
+                        and
+                        buttons.
+                        <br />
+                        <br />
+
+                        The backend needed to be robust and easily extensible as it required on-device storage of user
+                        generated content as well as the ability to sync and update with a remote server to fetch new
+                        content from employers
+                        and update existing info. A service pattern approach was implemented along with a local SQL
+                        database
+                        (SQLFlite) and gateway for API calls.
+                        <br />
+                        <br />
+
+                        Many additional special features were implemented including start and stop timers, digital
+                        signatures, remote
+                        database tree navigation.
+                    </p>
+                </section>
+
+            </div>
+        </section>
+
+
+        <!-- Result -->
+        <section class="wrapper style3">
+            <div class="inner">
+                <!-- <span class="image right" style="max-width: 20em;"><img
+                        src="../images/projects/wappy/ss_1.svg"></span> -->
+
+                <!-- <Image src="/assets/images/projects/wappy/header.svg" class="lg:float-left lg:pr-32 w-1/2" /> -->
+
+                <div>
+                    <h1>Result</h1>
+                    <p>
+                        The app has a presence on both the Apple Store and Google Play. Being a centerpiece of ROBAWS
+                        software
+                        package, it is used by numerous companies and thousands of employees.
+
+                        Development continues to this day in both maintenance and feature addition.
+                    </p>
+                </div>
+
+                <!-- <div class="inner" style="text-align: center; justify-items: center;"> -->
+                    <a href="http://www.wappy.io/" class="button ">Website</a>
+
+                <!-- </div> -->
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer" class="wrapper alt">
+            <div class="inner">
+                <ul class="menu">
+                    <li>Caelan Anderson | Software Engineer</li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

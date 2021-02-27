@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Caelan Anderson - BuddyUp</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="../assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Header -->
+    <header id="header">
+        <nav class="">
+            <ul style="text-align: center;">
+                <li><a href="../index.html#two">Back</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper ">
+
+        <!-- Main -->
+        <section id="main" class="wrapper">
+            <div class="inner">
+
+                <span class="image fit" style="max-width: 24em; 	margin:auto;
+                display:table;"><img src="../images/projects/buddyup/logo.png"></span>
+                <!-- <span class="image fit" style="max-width: 12em; 	margin:auto;
+                display:table; padding-top: 2em; padding-bottom: 4em;" class="center"><img
+                        src="../images/projects/wappy/company.svg"></span>
+ -->
+
+
+
+                <section style="display: block; overflow: hidden">
+                    <h1>Client</h1>
+                    <p><a href="https://www.unimelb.edu.au/"><b>The University of Melbourne</b></a> group referred to as
+                        the BuddyUp team works to bring students together through a combination of technology and human
+                        interaction. Their vision is to maximise feelings of belonging and connection among university
+                        students.</p>
+                    <!-- <img src="../images/projects/buddyup/s_1.svg" style="float: left;  max-width: 18em; "> -->
+                    <br />
+                    <br />
+                    <h1>Project</h1>
+
+                    <p>
+                        Beginning in 2018, The University of Melbourne on behalf of the BuddyUp team commissioned me to
+                        construct a platform that would allow students to form study groups based on shared subjects
+                        with others they may not even know.
+                        <br /><br />
+                        The goal was to have a platform so streamlined and easy that students would jump on, have their
+                        subjects and timetable already available and be in a group within hours.
+
+                        <br /><br />The project scope included:<br />
+                        • Realtime Firebase database to host account, message, and content data <br />
+                        • Google App Engine instance to serve as an API that would run an algorithm to match students
+                        together into appropriate groups<br />
+                        • Cross platform Flutter app for users to engage on the platform <br />
+
+
+
+                    </p>
+                </section>
+            </div>
+        </section>
+
+        <!-- Implementation -->
+        <section class="wrapper style1">
+            <div class="inner">
+
+                <section style="overflow: hidden;">
+                    <!-- <div style="float: right">
+                        <img src="../images/projects/buddyup/s_3.svg" style="max-width: 20em; display: block">
+
+                    </div> -->
+
+                    <h1>Implementation</h1>
+                    <p>
+                        An important first step was designing the data model for this project as there were many moving
+                        parts.
+                        <br /><br />
+                        One of the most crucial parts of the app was automatic retrieval of timetable and subject
+                        information. Due to limitations from the University, a scraper was constructed for the
+                        prototype, this was heavily involved as it needed to be robust enough to handle any errors that
+                        may arise.
+                        <br /><br />
+                        The next step was to build the software that would analyse the Firebase database to match
+                        students who both shared a subject and wanted to form a study group. This was done using python
+                        on a GAE that is connected to the Firebase database.
+                        <br /><br />
+                        The app was then designed, prototyped and built in accordance with the features described below
+                    </p>
+
+                    <p>
+                        The app itself supported a number of features that cover a wide range of functionality
+                        including: <br />
+                        • Automatic retrieval of timetable and subject information<br />
+                        • Friend and chat system both group and individual for students to connect and
+                        organise<br />
+                        • Interactive timetable to customise available times for study group<br />
+                        • Inbuilt notification and day tracking to alert users when their study group was
+                        meeting<br />
+                        • Rating system to let the platform know who they liked meeting with<br />
+                        • Connectivity with university library sensor API which returned library traffic <br />
+
+                    </p>
+
+                </section>
+
+            </div>
+        </section>
+
+
+
+        <!-- Result -->
+        <section class="wrapper style3">
+            <div class="inner">
+                <!-- <span class="image right" style="max-width: 20em;"><img
+                        src="../images/projects/wappy/ss_1.svg"></span> -->
+
+                <!-- <Image src="/assets/images/projects/wappy/header.svg" class="lg:float-left lg:pr-32 w-1/2" /> -->
+
+                <div>
+                    <h1>Result</h1>
+                    <p>
+                        Releasing in the app was very exciting. In the first few days we had hundreds of users signing
+                        up and creating new groups! It was both challenging and rewarding to monitor and maintain
+                        performance using analytics tools like Sentry and Googles inbuilt Firestore Analytics.
+                        <br />
+                        <br />
+                        The app was enjoyed for months before the COVID-19 pandemic arose and cause students not to be
+                        able to meet up in person. The app was subsequently disabled until further notice.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer" class="wrapper alt">
+            <div class="inner">
+                <ul class="menu">
+                    <li>Caelan Anderson | Software Engineer</li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
